@@ -4,7 +4,7 @@
     "": {
       "name": "kigger-paa-fugle",
       "dependencies": {
-        "@hookform/resolvers": "^4.0.0",
+        "@hookform/resolvers": "^4.1.0",
         "@radix-ui/react-label": "^2.1.2",
         "@radix-ui/react-select": "^2.1.6",
         "@radix-ui/react-slot": "^1.1.2",
@@ -23,16 +23,16 @@
         "zod": "^3.24.2",
       },
       "devDependencies": {
-        "@eslint/eslintrc": "^3",
-        "@types/node": "^20",
+        "@eslint/eslintrc": "^3.2.0",
+        "@types/node": "^20.17.19",
         "@types/pg": "^8.11.11",
-        "@types/react": "^19",
-        "@types/react-dom": "^19",
-        "eslint": "^9",
+        "@types/react": "^19.0.10",
+        "@types/react-dom": "^19.0.4",
+        "eslint": "^9.20.1",
         "eslint-config-next": "15.1.7",
-        "postcss": "^8",
-        "tailwindcss": "^3.4.1",
-        "typescript": "^5",
+        "postcss": "^8.5.2",
+        "tailwindcss": "^3.4.17",
+        "typescript": "^5.7.3",
       },
     },
   },
@@ -65,7 +65,7 @@
 
     "@floating-ui/utils": ["@floating-ui/utils@0.2.9", "", {}, "sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg=="],
 
-    "@hookform/resolvers": ["@hookform/resolvers@4.0.0", "", { "peerDependencies": { "react-hook-form": "^7.0.0" } }, "sha512-93ZueVlTaeMF0pRbrLbcnzrxeb2mGA/xyO3RgfrsKs5OCtcfjoWcdjBJm+N7096Jfg/JYlGPjuyQCgqVEodSTg=="],
+    "@hookform/resolvers": ["@hookform/resolvers@4.1.0", "", { "dependencies": { "caniuse-lite": "^1.0.30001698" }, "peerDependencies": { "react-hook-form": "^7.0.0" } }, "sha512-fX/uHKb+OOCpACLc6enuTQsf0ZpRrKbeBBPETg5PCPLCIYV6osP2Bw6ezuclM61lH+wBF9eXcuC0+BFh9XOEnQ=="],
 
     "@humanfs/core": ["@humanfs/core@0.19.1", "", {}, "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA=="],
 
