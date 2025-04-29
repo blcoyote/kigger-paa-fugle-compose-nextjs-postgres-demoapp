@@ -1,4 +1,4 @@
-name: 'birdseye'
+name: 'birdwatcher'
 services:
   nextjs:
     build: .
