@@ -3,11 +3,11 @@ services:
   nextjs:
     build: .
     ports:
-      - '3000:3000'
+      - '${BIRDS_PORT}:3000'
     depends_on:
       - db
     environment:
-      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/birdsdb
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:${POSTGRES_PORT}/birdsdb
     networks:
       - database
       - public
@@ -22,6 +22,9 @@ services:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - database
+    expose:
+    - ${POSTGRES_PORT}
+    command: -p ${POSTGRES_PORT}
 
   pgadmin:
     image: dpage/pgadmin4
@@ -31,7 +34,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
-      - '8080:80'
+      - '${PGADMIN_PORT}:80'
     depends_on:
       - db
     networks:

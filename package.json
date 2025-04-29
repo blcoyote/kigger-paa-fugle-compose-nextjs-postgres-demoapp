@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "compose": "POSTGRES_USER=birdsuser POSTGRES_PASSWORD=birdspassword docker compose up --build -d"
+    "compose": "POSTGRES_USER=birdsuser POSTGRES_PASSWORD=birdspassword POSTGRES_PORT=5433 BIRDS_PORT=3003 PGADMIN_PORT=8081 docker compose up --build -d"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.1.4",
