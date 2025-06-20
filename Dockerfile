@@ -1,4 +1,3 @@
-# Use the official Node.js image as the base image
 FROM oven/bun:alpine
 
 # Set the working directory
@@ -13,11 +12,11 @@ RUN bun install --frozen-lockfile
 # Copy the rest of the application code
 COPY . .
 
-# Build the Next.js application
+# Build the application
 RUN bun run build
 
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Start the Next.js application
+# Start the  application
 CMD ["bun", "start"]
